@@ -6,7 +6,6 @@ import AhCard from "../components/cards";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import useSocket from "../socketIo/useSocket";
-import Btn from "../components/buttons/Button";
 
 
 const Home = () => {
@@ -29,9 +28,9 @@ const Home = () => {
   return (
     <>
       <AhCard heading={"New Meeting"}>
-        <AhCard>
+        {/* <AhCard>
           <Btn/>
-        </AhCard>
+        </AhCard> */}
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
           <StatisticCard
             onClick={newMeetingHandler}
